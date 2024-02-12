@@ -1,9 +1,10 @@
-$background: #1e293b;
+$background: #01221a;
 $activeBg: #3c495f5f;
 $white: #ffffff;
 $border: #708090;
-$primaryColor: #60a5fa;
-$activeBorder: #3b82f6;
+$primaryColor: #3db754;
+$primaryColorDark: #1c5627;
+$activeBorder: #229358;
 $grayText: #9ca3af;
 $danger: #dc2626;
 $dangerDark: #8f1919;
@@ -117,6 +118,12 @@ body {
     @extend .button;
     padding: 0.5rem 1rem;
     background-color: $primaryColor;
+
+
+    &:hover,
+    &:focus {
+      background-color: $primaryColorDark;
+    }
   }
 }
 
